@@ -1,0 +1,35 @@
+.services-block {
+  @include set-block;
+
+  $block-name:                &; // #{$block-name}__element
+
+  h4,
+  h5 {
+    color: white;
+  }
+
+  &__item {
+    padding-top: 65px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    text-align: left;
+    color: white;
+    border-radius: 5px;
+    background-color: #181A28;
+    background-image:
+      svg-load('../img/double-decor-line.svg', fill=#0ca7fe);
+    background-repeat: no-repeat;
+    background-size: 190px 26px;
+    background-position: center top 20px;
+
+    @media (min-width: 768px) {
+      padding-top: 75px;
+      padding-bottom: 20px;
+    }
+
+    @media (min-width: 1280px) {
+      padding-top: 85px;
+      padding-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.news-block {
+  @include set-block;
+
+  $block-name:                &; // #{$block-name}__element
+
+  .uk-card-media-top {
+
+    img {
+      @include object-fit(cover);
+    }
+  }
+}

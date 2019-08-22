@@ -5,20 +5,33 @@
     "logo": [],
     "sprite-svg": [],
     "object-fit-polyfill": [],
-    "is-mobile": [],
-    "embed-responsive": []
+    "embed-responsive": [],
+    "scaffolding": [],
+    "index-banner": [],
+    "services-block": [],
+    "advantages-block": [],
+    "clients-slider": [],
+    "partners-slider": [],
+    "news-block": [],
+    "contacts-form": [],
+    "second-banner": [],
+    "steps-block": [],
+    "about-company-block": [],
+    "team-block": [],
+    "service-item-block": [],
+    "contacts-text-block": [],
+    "contacts-map-block": [],
+    "p404-block": []
   },
   "addCssBefore": [
-    "../../node_modules/uikit/src/scss/variables.scss",
-    "../../node_modules/uikit/src/scss/mixins.scss",
-    "../../node_modules/uikit/src/scss/uikit.scss",
+    "./src/css/variables.scss",
+    "./src/css/mixins.scss",
+    "./src/css/uikit.scss",
     "./src/scss/variables.scss",
     "./src/scss/mixins.scss"
   ],
-  "addCssAfter": [
-  ],
-  "singleCompiled": [
-  ],
+  "addCssAfter": [],
+  "singleCompiled": [],
   "addJsBefore": [
     "./node_modules/uikit/dist/js/uikit.js",
     "./node_modules/uikit/dist/js/uikit-icons.js",

@@ -5,7 +5,23 @@
     "logo": [],
     "sprite-svg": [],
     "object-fit-polyfill": [],
-    "embed-responsive": []
+    "embed-responsive": [],
+    "scaffolding": [],
+    "index-banner": [],
+    "services-block": [],
+    "advantages-block": [],
+    "clients-slider": [],
+    "partners-slider": [],
+    "news-block": [],
+    "contacts-form": [],
+    "second-banner": [],
+    "steps-block": [],
+    "about-company-block": [],
+    "team-block": [],
+    "service-item-block": [],
+    "contacts-text-block": [],
+    "contacts-map-block": [],
+    "p404-block": []
   },
   "addCssBefore": [
     "../../node_modules/uikit/src/scss/variables.scss",
@@ -14,13 +30,12 @@
     "./src/scss/variables.scss",
     "./src/scss/mixins.scss"
   ],
-  "addCssAfter": [
-  ],
-  "singleCompiled": [
-  ],
+  "addCssAfter": [],
+  "singleCompiled": [],
   "addJsBefore": [
     "./node_modules/uikit/dist/js/uikit.js",
     "./node_modules/uikit/dist/js/uikit-icons.js",
+    "./node_modules/blazy/blazy.js",
     "./node_modules/picturefill/dist/picturefill.js",
     "./node_modules/svg4everybody/dist/svg4everybody.js",
     "./node_modules/object-fit-images/dist/ofi.js"

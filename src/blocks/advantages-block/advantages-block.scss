@@ -1,0 +1,28 @@
+.advantages-block {
+  @include set-block;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__bg {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    background-color: white;
+
+    @media (min-width: 768px) {
+      padding-top: 30px !important;
+      padding-bottom: 30px !important;
+    }
+
+    @media (min-width: 1280px) {
+      padding-top: 40px !important;
+      padding-bottom: 40px !important;
+    }
+  }
+
+  &__img {
+
+    img {
+      @include object-fit;
+    }
+  }
+}

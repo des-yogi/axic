@@ -590,7 +590,7 @@ function getFilesList(config){
       }
 
       // Картинки (тупо от всех блоков, без проверки)
-      res.img.push(config.dirs.srcPath + config.dirs.blocksDirName + '/' + blockName + '/img/*.{jpg,jpeg,gif,png,svg}');
+      res.img.push(config.dirs.srcPath + config.dirs.blocksDirName + '/' + blockName + '/img/*.{jpg,jpeg,gif,png,svg,webp}');
 
       // Список директорий
       res.blocksDirs.push(config.dirs.blocksDirName + '/' + blockName + '/');

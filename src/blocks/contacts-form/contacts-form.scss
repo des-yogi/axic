@@ -1,0 +1,6 @@
+.contacts-form {
+  @include set-block;
+
+  $block-name:                &; // #{$block-name}__element
+
+}

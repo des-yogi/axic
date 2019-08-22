@@ -22,6 +22,9 @@
 // });
 
 (function(){
-  // code
+
+  var bLazy = new Blazy({
+    selector: '.b-lazy'
+  });
 
 }());

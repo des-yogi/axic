@@ -1,7 +1,3 @@
-// В этом файле должны быть стили только для БЭМ-блока embed-responsive, его элементов,
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Не пишите здесь другие селекторы.
-
 .embed-responsive {
   position: relative;
   display: block;
@@ -12,11 +8,12 @@
   &::before {
     content: '';
     display: block;
-    padding-top: percentage(9 / 16); // по умолчанию ожидается вставка в формате 16/9
+    padding-top: percentage(10 / 16); // по умолчанию ожидается вставка в формате 16/9
   }
 
   // embed,
   // object,
+  img,
   iframe,
   video {
     position: absolute;
@@ -34,6 +31,13 @@
 
     &::before {
       padding-top: percentage(3 / 4);
+    }
+  }
+
+  &--3-2 { // модификатор на случай вставки 4/3
+
+    &::before {
+      padding-top: percentage(2 / 3);
     }
   }
 }

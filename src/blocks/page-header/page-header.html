@@ -2,63 +2,64 @@
 @ @include('blocks/page-header/page-header.html')
 -->
 
-<header class="page-header" role="banner">
+<header class="page-header uk-margin-medium-bottom" role="banner">
 
-  <div class="uk-container">
+  <nav class="uk-navbar-container">
+    <div class="uk-container">
 
-    <nav class="uk-navbar-container" uk-navbar>
-      <div class="uk-navbar-left">
+      <div data-uk-navbar="" class="uk-navbar">
+        <div class="uk-navbar-left">
+          <a class="uk-logo" href="index.html" title="AXIC Company">
+            <img src="img/axic-logo.svg" alt="AXIC logo" width="146" height="42">
+          </a>
+        </div>
 
-        <ul class="uk-navbar-nav">
-          <li>
-            <a href="#">Item</a>
-            <div class="uk-navbar-dropdown" uk-drop="boundary: !nav; boundary-align: true; pos: bottom-justify;">
-              <ul class="uk-nav uk-navbar-dropdown-nav">
-                <li class="uk-active"><a href="#">Active</a></li>
-                <li><a href="#">Item</a></li>
-                <li class="uk-nav-header">Header</li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-                <li class="uk-nav-divider"></li>
-                <li><a href="#">Item</a></li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <a href="#">Item</a>
-            <div class="uk-navbar-dropdown" uk-drop="boundary: !nav; boundary-align: true; pos: bottom-justify;">
-              <div class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
-                <div>
-                  <ul class="uk-nav uk-navbar-dropdown-nav">
-                    <li class="uk-active"><a href="#">Active</a></li>
-                    <li><a href="#">Item</a></li>
-                    <li class="uk-nav-header">Header</li>
-                    <li><a href="#">Item</a></li>
-                    <li><a href="#">Item</a></li>
-                    <li class="uk-nav-divider"></li>
-                    <li><a href="#">Item</a></li>
-                  </ul>
-                </div>
-                <div>
-                  <ul class="uk-nav uk-navbar-dropdown-nav">
-                    <li class="uk-active"><a href="#">Active</a></li>
-                    <li><a href="#">Item</a></li>
-                    <li class="uk-nav-header">Header</li>
-                    <li><a href="#">Item</a></li>
-                    <li><a href="#">Item</a></li>
-                    <li class="uk-nav-divider"></li>
-                    <li><a href="#">Item</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
+        <div class="uk-navbar-right">
 
+          <ul class="uk-navbar-nav  uk-visible@l">
+            <li class="uk-active">
+              <a href="#">Про компанію</a>
+            </li>
+            <li class="">
+              <a href="#">Послуги</a>
+            </li>
+            <li class="">
+              <a href="#">Новини</a>
+            </li>
+            <li class="">
+              <a href="#">Контакти</a>
+            </li>
+          </ul>
+
+          <div class="page-header__btn-wrapper  uk-margin-left  uk-visible@s">
+            <button class="uk-button uk-button-danger" data-uk-toggle="target: #callback-modal" type="button">Зв'язатись з нами</button>
+            <span class="uk-inline uk-margin-small-left">
+              <button class="uk-button uk-button-default" type="button">Мова</button>
+              <!-- <div data-uk-drop="mode: click; offset: 10" style="width: 100%">
+                <ul class="uk-list">
+                  <li class="">
+                    <a class="" href="#" title="Русский язык" style="display:block; padding: 0 20px;">Рус</a>
+                  </li>
+                  <li class="">
+                    <a class="" href="#" title="Еще язык" style="display:block; padding: 0 20px;">Анг</a>
+                  </li>
+                </ul>
+              </div> -->
+            </span>
+          </div>
+
+          <a class="uk-navbar-toggle uk-icon uk-navbar-toggle-icon uk-padding-remove-right  uk-hidden@l uk-margin-small-left" href="#offcanvas" data-uk-navbar-toggle-icon="" data-uk-toggle="">
+            <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="navbar-toggle-icon">
+              <rect y="9" width="20" height="2"></rect>
+              <rect y="3" width="20" height="2"></rect>
+              <rect y="15" width="20" height="2"></rect>
+            </svg>
+          </a>
+        </div>
       </div>
-    </nav>
-
-  </div>
+      <span class="decor-line"></span>
+    </div>
+  </nav>
 
 
 </header>

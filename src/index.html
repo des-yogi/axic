@@ -1,419 +1,494 @@
 <!DOCTYPE html>
-<html class="no-js  page" lang="ru">
+<html class="scaffolding" lang="ru" prefix="og: https://ogp.me/ns#">
 
 <head>
   <meta charset="utf-8">
   <title>Home page</title>
-  <meta name="description" content="">
   @@include('_include/page_head.html')
 </head>
 
 <body>
 
-  <div id="offcanvas-slide" uk-offcanvas="overlay: true">
-    <div class="uk-offcanvas-bar">
+  <div class="uk-offcanvas-content">
 
-      <button class="uk-offcanvas-close" type="button" uk-close></button>
+    @@include('blocks/page-header/page-header.html')
 
-      <h3>Title</h3>
+    <main class="main-content">
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat.</p>
+      <section class="index-banner">
+        <div class="uk-container">
+          <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-text-center" data-uk-grid>
+            <div>
+              <div class="uk-text-left">
+                <h1>Новий стандарт у сфері транспортних послуг</h1>
+                <p>AIXC — це сучасна транспортна служба, яка використовує технологію, щоб зробити транспортні засоби простими, надійними та ефективними для власників автопарку.</p>
+                <a href="#" class="uk-button uk-button-default index-banner__link">Дізнатися більше</a>
+              </div>
+            </div>
+            <div class="index-banner__inner">
+              <div class="index-banner__img">
+                <img data-src="img/banner-img.png" width="580" height="348" alt="Альт Текст" uk-img>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    </div>
-  </div>
-
-  <div id="offcanvas-push" uk-offcanvas="mode: push; overlay: true">
-    <div class="uk-offcanvas-bar">
-
-      <button class="uk-offcanvas-close" type="button" uk-close></button>
-
-      <h3>Title</h3>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat.</p>
-
-    </div>
-  </div>
-
-  <div id="offcanvas-reveal" uk-offcanvas="mode: reveal; overlay: true">
-    <div class="uk-offcanvas-bar">
-
-      <button class="uk-offcanvas-close" type="button" uk-close></button>
-
-      <h3>Title</h3>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat.</p>
-
-    </div>
-  </div>
-
-  <div id="offcanvas-none" uk-offcanvas="mode: none; overlay: true">
-    <div class="uk-offcanvas-bar">
-
-      <button class="uk-offcanvas-close" type="button" uk-close></button>
-
-      <h3>Title</h3>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat.</p>
-
-    </div>
-  </div>
-
-  <div class="page__inner">
-
-    <div class="page__content" id="target-top">
-
-      @@include('blocks/page-header/page-header.html')
-
-      <main role="main">
-
+      <section class="services-block">
         <div class="uk-container">
 
-          <div class="uk-cover-container uk-height-medium">
-            <video autoplay loop muted playsinline uk-cover>
-              <source src="https://quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
-              <source src="https://quirksmode.org/html5/videos/big_buck_bunny.ogv" type="video/ogg">
-            </video>
-          </div>
-
-          <ul class="uk-breadcrumb">
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li class="uk-disabled"><a>Disabled</a></li>
-            <li><span>Active</span></li>
-          </ul>
-
-          <ul class="uk-iconnav">
-            <li><a href="" uk-icon="icon: check"></a></li>
-            <li><a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="copy"></a></li>
-            <li><a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="file-edit"></a></li>
-            <li><a href="#" class="uk-icon-link" uk-icon="trash"></a></li>
-            <li>
-              <!-- Targets the SVG image -->
-              <img src="img/cloud-download.svg" width="40" height="40" uk-svg="stroke-animation: true">
-            </li>
-          </ul>
-
-          <div class="uk-text-center" uk-parallax="stroke: 100%; viewport: 0.3">
-            <img src="img/strokes.svg" alt="" uk-svg>
-          </div>
-
-          <a href="" class="uk-icon-button uk-margin-small" uk-icon="twitter"></a>
-
-          <a class="uk-button uk-button-primary" href="#target-bottom" uk-scroll>Scroll down</a>
-
-          <div uk-alert>
-            <a class="uk-alert-close" uk-close></a>
-            <h3>Notice</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.</p>
-          </div>
-
-          <div class="uk-alert-danger" uk-alert>
-            <a class="uk-alert-close" uk-close></a>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-          </div>
-
-          <div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex uk-flex-top"
-            style="background-image: url('img/dark.jpg');">
-            <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
-              <h1 uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.5;">Headline</h1>
-              <p uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.5;">Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div>
-
-          <div class="uk-grid-medium uk-child-width-expand@s uk-text-center" uk-grid>
-            <div class="uk-animation-toggle" tabindex="0">
-              <div class="uk-card uk-card-default uk-card-body uk-animation-shake">Item</div>
-            </div>
-            <div class="uk-animation-toggle" tabindex="0">
-              <div class="uk-card uk-card-default uk-card-body uk-animation-shake">Item</div>
-            </div>
-            <div class="uk-animation-toggle" tabindex="0">
-              <div class="uk-card uk-card-default uk-card-body uk-animation-shake">Item</div>
-            </div>
-          </div>
-
-          <p uk-margin>
-            <button class="uk-button uk-button-default">Default</button>
-            <button class="uk-button uk-button-primary">Primary</button>
-            <button class="uk-button uk-button-secondary">Secondary</button>
-            <button class="uk-button uk-button-danger">Danger</button>
-            <button class="uk-button uk-button-text">Text</button>
-            <button class="uk-button uk-button-link">Link</button>
-          </p>
-
-          <div class="uk-margin-medium-bottom uk-child-width-1-2@s uk-grid-match" uk-grid>
+          <div class="uk-child-width-1-2@l uk-flex-center uk-text-center uk-margin-medium-bottom" data-uk-grid>
             <div>
-              <div class="uk-card uk-card-hover uk-card-body">
-                <h3 class="uk-card-title">Hover</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <span class="uk-h4 uk-text-uppercase uk-text-muted">Поважайте свій час</span>
+              <h2 class="uk-margin-small-top uk-text-uppercase">Послуги які ми надаємо</h2>
+              <p>Автоматизовані звіти та нарахування витрат у реальному часі означають, що ви можете приймати розумніші рішення з вашим флотом.</p>
+            </div>
+          </div>
+
+          <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@l uk-text-center uk-margin-bottom" data-uk-grid data-uk-height-match="target: > div > .uk-card">
+            <div>
+              <div class="uk-card uk-card-default uk-card-body services-block__item">
+                <h4>Грузоперевозки по Украине</h4>
+                <ul class="uk-list">
+                  <li>Пасажирські перевезення</li>
+                  <li>Оренда спец. техніки</li>
+                  <li>Пасажирські перевезення</li>
+                  <li>Оренда спец. техніки</li>
+                  <li>Пасажирські перевезення</li>
+                </ul>
               </div>
             </div>
             <div>
-              <div class="uk-card uk-card-default uk-card-hover uk-card-body">
-                <h3 class="uk-card-title">Default</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <div class="uk-card uk-card-default uk-card-body services-block__item">
+                <h4>Организация переездов</h4>
+                <ul class="uk-list">
+                  <li>Пасажирські перевезення</li>
+                  <li>Оренда спец. техніки</li>
+                  <li>Пасажирські перевезення</li>
+                  <li>Оренда спец. техніки</li>
+                  <li>Пасажирські перевезення</li>
+                  <li>Пасажирські перевезення</li>
+                  <li>Пасажирські перевезення</li>
+                </ul>
               </div>
             </div>
             <div>
-              <div class="uk-card uk-card-primary uk-card-hover uk-card-body uk-light">
-                <h3 class="uk-card-title">Primary</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <div class="uk-card uk-card-default uk-card-body services-block__item">
+                <h4>Управление транспортными рисками на предприятии</h4>
+                <ul class="uk-list">
+                  <li>Пасажирські перевезення</li>
+                  <li>Оренда спец. техніки</li>
+                  <li>Пасажирські перевезення</li>
+                  <li>Оренда спец. техніки</li>
+                  <li>Пасажирські перевезення</li>
+                </ul>
               </div>
             </div>
             <div>
-              <div class="uk-card uk-card-secondary uk-card-hover uk-card-body uk-light">
-                <h3 class="uk-card-title">Secondary</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <div class="uk-card uk-card-default uk-card-body services-block__item">
+                <h4>Управление автопарком предприятия, флит менеджмент</h4>
+                <ul class="uk-list">
+                  <li>Пасажирські перевезення</li>
+                  <li>Оренда спец. техніки</li>
+                  <li>Пасажирські перевезення</li>
+                  <li>Оренда спец. техніки</li>
+                  <li>Пасажирські перевезення</li>
+                  <li>Пасажирські перевезення</li>
+                </ul>
               </div>
             </div>
           </div>
 
-          <div class="uk-column-1-2 uk-column-divider">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-              laborum.</p>
-
-            <blockquote cite="#" class="uk-column-span">
-              <p>All we have to decide is what to do with the time that is given us.</p>
-              <footer>Gandalf in in <cite><a href="">The Fellowship of the Ring</a></cite></footer>
-            </blockquote>
-
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-              pariatur. Excepteur sint occaecat cupidatat non proident. Duis aute irure dolor in reprehenderit in
-              voluptate velit esse cillum dolore.</p>
-          </div>
-
-          <div class="uk-margin-top">
-            <p uk-margin>
-              <a class="uk-button uk-button-default" href="#modal-media-video" uk-toggle>Video</a>
-            </p>
-
-            <p uk-margin>
-              <button class="uk-button uk-button-default uk-margin-small-right" type="button"
-                uk-toggle="target: #offcanvas-reveal">Off-Canvas</button>
-            </p>
-
-
-            <div id="modal-media-video" class="uk-flex-top" uk-modal>
-              <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
-                <button class="uk-modal-close-outside" type="button" uk-close></button>
-                <video controls playsinline uk-video>
-                  <source src="https://quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
-                  <source src="https://quirksmode.org/html5/videos/big_buck_bunny.ogv" type="video/ogg">
-                </video>
-              </div>
-            </div>
-          </div>
-
-          <div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex uk-flex-top"
-            style="background-image: url('img/dark.jpg');">
-            <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
-              <h1 uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.5;">Headline</h1>
-              <p uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.5;">Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div>
-
-          <div class="uk-grid-small uk-child-width-auto uk-margin-medium" uk-grid
-            uk-countdown="date: 2019-05-11T20:28:00+00:00">
+          <div class="uk-child-width-1-2@s uk-flex-center uk-text-center uk-margin-remove-top" data-uk-grid>
             <div>
-              <div class="uk-countdown-number uk-countdown-days"></div>
+              <a href="#" class="uk-button uk-button-danger uk-width-1-1">Усі послуги</a>
             </div>
-            <div>
-              <div class="uk-countdown-number uk-countdown-hours"></div>
-            </div>
-            <div>
-              <div class="uk-countdown-number uk-countdown-minutes"></div>
-            </div>
-            <div>
-              <div class="uk-countdown-number uk-countdown-seconds"></div>
-            </div>
-          </div>
-
-          <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-
-            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
-              <li>
-                <div class="uk-panel">
-                  <img src="img/slider1.jpg" alt="">
-                  <div class="uk-position-center uk-panel">
-                    <h1>1</h1>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="uk-panel">
-                  <img src="img/slider2.jpg" alt="">
-                  <div class="uk-position-center uk-panel">
-                    <h1>2</h1>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="uk-panel">
-                  <img src="img/slider3.jpg" alt="">
-                  <div class="uk-position-center uk-panel">
-                    <h1>3</h1>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="uk-panel">
-                  <img src="img/slider4.jpg" alt="">
-                  <div class="uk-position-center uk-panel">
-                    <h1>4</h1>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="uk-panel">
-                  <img src="img/slider5.jpg" alt="">
-                  <div class="uk-position-center uk-panel">
-                    <h1>5</h1>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="uk-panel">
-                  <img src="img/slider1.jpg" alt="">
-                  <div class="uk-position-center uk-panel">
-                    <h1>6</h1>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="uk-panel">
-                  <img src="img/slider2.jpg" alt="">
-                  <div class="uk-position-center uk-panel">
-                    <h1>7</h1>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="uk-panel">
-                  <img src="img/slider3.jpg" alt="">
-                  <div class="uk-position-center uk-panel">
-                    <h1>8</h1>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="uk-panel">
-                  <img src="img/slider4.jpg" alt="">
-                  <div class="uk-position-center uk-panel">
-                    <h1>9</h1>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="uk-panel">
-                  <img src="img/slider5.jpg" alt="">
-                  <div class="uk-position-center uk-panel">
-                    <h1>10</h1>
-                  </div>
-                </div>
-              </li>
-            </ul>
-
-            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
-              uk-slider-item="previous"></a>
-            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
-              uk-slider-item="next"></a>
-
-            <ul class="uk-grid-small uk-child-width-1-2 uk-child-width-1-4@s uk-text-center uk-margin-medium"
-              uk-sortable="handle: .uk-sortable-handle" uk-grid>
-              <li>
-                <div class="uk-card uk-card-default uk-card-body">
-                  <span class="uk-sortable-handle uk-margin-small-right" uk-icon="icon: table"></span>Item 1
-                </div>
-              </li>
-              <li>
-                <div class="uk-card uk-card-default uk-card-body">
-                  <span class="uk-sortable-handle uk-margin-small-right" uk-icon="icon: table"></span>Item 2
-                </div>
-              </li>
-              <li>
-                <div class="uk-card uk-card-default uk-card-body">
-                  <span class="uk-sortable-handle uk-margin-small-right" uk-icon="icon: table"></span>Item 3
-                </div>
-              </li>
-              <li>
-                <div class="uk-card uk-card-default uk-card-body">
-                  <span class="uk-sortable-handle uk-margin-small-right" uk-icon="icon: table"></span>Item 4
-                </div>
-              </li>
-              <li>
-                <div class="uk-card uk-card-default uk-card-body">
-                  <span class="uk-sortable-handle uk-margin-small-right" uk-icon="icon: table"></span>Item 5
-                </div>
-              </li>
-              <li>
-                <div class="uk-card uk-card-default uk-card-body">
-                  <span class="uk-sortable-handle uk-margin-small-right" uk-icon="icon: table"></span>Item 6
-                </div>
-              </li>
-              <li>
-                <div class="uk-card uk-card-default uk-card-body">
-                  <span class="uk-sortable-handle uk-margin-small-right" uk-icon="icon: table"></span>Item 7
-                </div>
-              </li>
-              <li>
-                <div class="uk-card uk-card-default uk-card-body">
-                  <span class="uk-sortable-handle uk-margin-small-right" uk-icon="icon: table"></span>Item 8
-                </div>
-              </li>
-            </ul>
-
           </div>
 
         </div>
+      </section>
 
-      </main>
+      <section class="advantages-block">
 
-    </div>
-
-    <div class="uk-section uk-section-secondary uk-light">
-      <div class="uk-container">
-
-        <h3>Section Primary</h3>
-
-        <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
-          <div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-          </div>
-          <div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-          </div>
-          <div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+        <div class="uk-container uk-margin-medium-bottom">
+          <div class="uk-child-width-1-2@l uk-flex-center uk-text-center" data-uk-grid>
+            <div>
+              <span class="uk-h4 uk-text-uppercase uk-text-muted">Поважайте свій час</span>
+              <h2 class="uk-margin-small-top uk-text-uppercase">Переваги передання послуг фліт менеджменту в аутсорсінг</h2>
+              <p>Автоматизовані звіти та нарахування витрат у реальному часі означають, що ви можете приймати розумніші рішення з вашим флотом.</p>
+            </div>
           </div>
         </div>
 
+        <div class="uk-section advantages-block__bg">
+          <div class="uk-container">
+            <div class="uk-child-width-1-1 uk-child-width-1-2@m" data-uk-grid>
+              <div>
+                <h3>Экономия на трудовых ресурсах</h3>
+                <p>Поскольку определенные бизнес-процессы передаются партнеру, компания избавляется от необходимости содержать собственных сотрудников для их ведения.</p>
+              </div>
+              <div>
+                <h3>Универсальность услуги</h3>
+                <p>Поскольку определенные бизнес-процессы передаются партнеру, компания избавляется от необходимости содержать собственных сотрудников для их ведения.</p>
+              </div>
+              <div>
+                <h3>Отсутствие расходов на кадровое делопроизводство</h3>
+                <p>Поскольку определенные бизнес-процессы передаются партнеру, компания избавляется от необходимости содержать собственных сотрудников для их ведения.</p>
+              </div>
+              <div>
+                <h3>Экономия на трудовых ресурсах</h3>
+                <p>Поскольку определенные бизнес-процессы передаются партнеру, компания избавляется от необходимости содержать собственных сотрудников для их ведения.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="advantages-block  clients-slider">
+
+        <div class="uk-container uk-margin-medium-bottom">
+          <div class="uk-child-width-1-2@l uk-flex-center uk-text-center" data-uk-grid>
+            <div>
+              <h2 class="uk-margin-small-top uk-text-uppercase">Вони нам довіряють</h2>
+              <p>Lorem Ipsum є псевдо - латинський текст використовується у веб - дизайні, типографіка, верстка, і друку замість англійської.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="uk-container">
+          <div class="uk-position-relative" tabindex="-1" data-uk-slider="center: true">
+
+            <div class="uk-slider-container">
+              <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-4@s">
+                <li>
+                  <a href="#" class="embed-responsive  advantages-block__img">
+                    <img src="img/slide-img.jpg" alt="Картинка">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="embed-responsive  advantages-block__img">
+                    <img src="img/slide-img.jpg" alt="Картинка">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="embed-responsive  advantages-block__img">
+                    <img src="img/slide-img.jpg" alt="Картинка">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="embed-responsive  advantages-block__img">
+                    <img src="img/slide-img.jpg" alt="Картинка">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="embed-responsive  advantages-block__img">
+                    <img src="img/slide-img.jpg" alt="Картинка">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="embed-responsive  advantages-block__img">
+                    <img src="img/slide-img.jpg" alt="Картинка">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="embed-responsive  advantages-block__img">
+                    <img src="img/slide-img.jpg" alt="Картинка">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="embed-responsive  advantages-block__img">
+                    <img src="img/slide-img.jpg" alt="Картинка">
+                  </a>
+                </li>
+              </ul>
+
+              <div>
+                <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+              </div>
+            </div>
+
+            <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+          </div>
+        </div>
+
+      </section>
+
+      <section class="advantages-block  partners-slider">
+
+        <div class="uk-container uk-margin-medium-bottom">
+          <div class="uk-child-width-1-2@l uk-flex-center uk-text-center" data-uk-grid>
+            <div>
+              <h2 class="uk-margin-small-top uk-text-uppercase">Наші партнери</h2>
+              <p>Lorem Ipsum є псевдо - латинський текст використовується у веб - дизайні, типографіка, верстка, і друку замість англійської.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="uk-container">
+          <div class="uk-position-relative" tabindex="-1" data-uk-slider="center: true">
+
+            <div class="uk-slider-container">
+              <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-4@s">
+                <li>
+                  <a href="#" class="embed-responsive  advantages-block__img">
+                    <img src="img/slide-img.jpg" alt="Картинка">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="embed-responsive  advantages-block__img">
+                    <img src="img/slide-img.jpg" alt="Картинка">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="embed-responsive  advantages-block__img">
+                    <img src="img/slide-img.jpg" alt="Картинка">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="embed-responsive  advantages-block__img">
+                    <img src="img/slide-img.jpg" alt="Картинка">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="embed-responsive  advantages-block__img">
+                    <img src="img/slide-img.jpg" alt="Картинка">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="embed-responsive  advantages-block__img">
+                    <img src="img/slide-img.jpg" alt="Картинка">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="embed-responsive  advantages-block__img">
+                    <img src="img/slide-img.jpg" alt="Картинка">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="embed-responsive  advantages-block__img">
+                    <img src="img/slide-img.jpg" alt="Картинка">
+                  </a>
+                </li>
+              </ul>
+
+              <div>
+                <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+              </div>
+            </div>
+
+            <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+          </div>
+        </div>
+
+      </section>
+
+      <section class="news-block">
+        <div class="uk-container">
+
+          <div class="uk-child-width-1-2@l uk-flex-center uk-text-center uk-margin-medium-bottom" data-uk-grid>
+            <div>
+              <h2 class="uk-margin-small-top uk-text-uppercase">Останні новини</h2>
+            </div>
+          </div>
+
+          <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-text-center uk-margin-bottom" data-uk-grid data-uk-height-match="target: > div > .uk-card">
+            <div>
+              <div class="uk-card  news-block__item">
+                <a href="#" class="embed-responsive  embed-responsive--3-2  uk-card-media-top">
+                  <picture>
+                    <source data-srcset="img/news-img-1.webp" media="(min-width: 992)" type="image/webp">
+                    <source data-srcset="img/news-img-1.jpg" media="(min-width: 992)">
+                    <!-- 373x249 -->
+                    <source data-srcset="img/news-img-1.webp" media="(min-width: 768)" type="image/webp">
+                    <source data-srcset="img/news-img-1.jpg" media="(min-width: 768)">
+                    <!-- 456x304 -->
+                    <source data-srcset="img/news-img-1.webp" type="image/webp">
+                    <img class="b-lazy" data-src="img/news-img-1.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Картинка" width="570" height="380">
+                  </picture>
+                </a>
+                <div class="uk-text-left">
+                  <h4 class="uk-margin-small-top uk-margin-small-bottom">
+                    <a href="#" class="news-block__link uk-text-emphasis">15 Способів покращити порядок доставки на наступний модельний рік</a>
+                  </h4>
+                  <span class="uk-text-meta">22 Лют, 2019</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="uk-card  news-block__item">
+                <a href="#" class="embed-responsive  embed-responsive--3-2  uk-card-media-top">
+                  <picture>
+                    <source data-srcset="img/news-img-2.webp" media="(min-width: 992)" type="image/webp">
+                    <source data-srcset="img/news-img-2.jpg" media="(min-width: 992)">
+                    <!-- 373x249 -->
+                    <source data-srcset="img/news-img-2.webp" media="(min-width: 768)" type="image/webp">
+                    <source data-srcset="img/news-img-2.jpg" media="(min-width: 768)">
+                    <!-- 456x304 -->
+                    <source data-srcset="img/news-img-2.webp" type="image/webp">
+                    <img class="b-lazy" data-src="img/news-img-2.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Картинка" width="570" height="380">
+                  </picture>
+                </a>
+                <div class="uk-text-left">
+                  <h4 class="uk-margin-small-top uk-margin-small-bottom">
+                    <a href="#" class="news-block__link uk-text-emphasis">Q&A: Корпоративна трансформація LeasePlan</a>
+                  </h4>
+                  <span class="uk-text-meta">22 Лют, 2019</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="uk-card  news-block__item">
+                <a href="#" class="embed-responsive  embed-responsive--3-2  uk-card-media-top">
+                  <picture>
+                    <source data-srcset="img/news-img-3.webp" media="(min-width: 992)" type="image/webp">
+                    <source data-srcset="img/news-img-3.jpg" media="(min-width: 992)">
+                    <!-- 373x249 -->
+                    <source data-srcset="img/news-img-3.webp" media="(min-width: 768)" type="image/webp">
+                    <source data-srcset="img/news-img-3.jpg" media="(min-width: 768)">
+                    <!-- 456x304 -->
+                    <source data-srcset="img/news-img-3.webp" type="image/webp">
+                    <img class="b-lazy" data-src="img/news-img-3.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Картинка" width="570" height="380">
+                  </picture>
+                </a>
+                <div class="uk-text-left">
+                  <h4 class="uk-margin-small-top uk-margin-small-bottom">
+                    <a href="#" class="news-block__link uk-text-emphasis">Як керувати драйверами Фліт Менеджмента</a>
+                  </h4>
+                  <span class="uk-text-meta">22 Лют, 2019</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="uk-card  news-block__item">
+                <a href="#" class="embed-responsive  embed-responsive--3-2  uk-card-media-top">
+                  <picture>
+                    <source data-srcset="img/news-img-1.webp" media="(min-width: 992)" type="image/webp">
+                    <source data-srcset="img/news-img-1.jpg" media="(min-width: 992)">
+                    <!-- 373x249 -->
+                    <source data-srcset="img/news-img-1.webp" media="(min-width: 768)" type="image/webp">
+                    <source data-srcset="img/news-img-1.jpg" media="(min-width: 768)">
+                    <!-- 456x304 -->
+                    <source data-srcset="img/news-img-1.webp" type="image/webp">
+                    <img class="b-lazy" data-src="img/news-img-1.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Картинка" width="570" height="380">
+                  </picture>
+                </a>
+                <div class="uk-text-left">
+                  <h4 class="uk-margin-small-top uk-margin-small-bottom">
+                    <a href="#" class="news-block__link uk-text-emphasis">15 Способів покращити порядок доставки</a>
+                  </h4>
+                  <span class="uk-text-meta">22 Лют, 2019</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="uk-child-width-1-2@s uk-child-width-1-3@l uk-flex-center uk-text-center uk-margin-remove-top" data-uk-grid>
+            <div>
+              <a href="#" class="uk-button uk-button-default uk-width-1-1">Усі новини</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="contacts-form">
+
+        <div class="uk-container uk-margin-medium-bottom">
+          <div class="uk-child-width-1-2@l uk-flex-center uk-text-center" data-uk-grid>
+            <div>
+              <h2 class="uk-margin-small-top uk-text-uppercase">Розпочнемо співпрацю вже сьогодні</h2>
+              <p>Автоматизовані звіти та нарахування витрат у реальному часі означають, що ви можете приймати розумніші рішення з вашим флотом.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="uk-container">
+          <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-flex-center" data-uk-grid>
+            <div>
+              <div>
+                <div class="uk-margin">
+                  <input class="uk-input" type="text" value="" placeholder="Имя">
+                </div>
+                <div class="uk-margin">
+                  <input class="uk-input" type="tel" value="" placeholder="Телефон">
+                </div>
+                <div class="uk-margin">
+                  <input class="uk-input" type="email" value="" placeholder="Email">
+                </div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div class="uk-margin">
+                  <textarea class="uk-textarea" rows="4" placeholder="Текст"></textarea>
+                </div>
+                <div class="uk-margin">
+                  <button class="uk-button uk-button-primary uk-width-expand" type="submit">Зв'язатись з нами</button>
+                </div>
+                <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                  <label class="">
+                    <input class="uk-checkbox" type="checkbox" checked>
+                    <span class="uk-padding-small uk-padding-remove-vertical">Я даю згоду на обробку персональних даних</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- This is the off-canvas -->
+    <div id="offcanvas" uk-offcanvas="flip: true; overlay: true">
+      <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+        <ul class="uk-nav uk-nav-default uk-margin-medium-top">
+          <li class="uk-active">
+            <a href="#">Про компанію</a>
+          </li>
+          <li class="">
+            <a href="#">Послуги</a>
+          </li>
+          <li class="">
+            <a href="#">Новини</a>
+          </li>
+          <li class="">
+            <a href="#">Контакти</a>
+          </li>
+        </ul>
+        <div class="page-header__btn-wrapper  uk-hidden@s" style="display:flex;flex-direction:column;">
+          <button class="uk-button uk-button-danger uk-margin-medium-top uk-margin-bottom" data-uk-toggle="target: #callback-modal" type="button">Зв'язатись з нами</button>
+          <span class="uk-inline">
+            <button class="uk-button uk-button-default uk-width-1-1" type="button">Мова</button>
+            <!-- <div data-uk-drop="mode: click; offset: 10" style="width: 100%">
+              <ul class="uk-list">
+                <li class="">
+                  <a class="" href="#" title="Русский язык" style="display:block; padding: 0 20px;">Рус</a>
+                </li>
+                <li class="">
+                  <a class="" href="#" title="Еще язык" style="display:block; padding: 0 20px;">Анг</a>
+                </li>
+              </ul>
+            </div> -->
+          </span>
+        </div>
       </div>
     </div>
 
-    <div class="uk-container page__footer-wrapper" id="target-bottom">
-      @@include('blocks/page-footer/page-footer.html')
-    </div>
+  </div>
 
-    <div class="uk-container">
-      <a class="uk-button uk-button-primary" href="#target-top" uk-scroll>Scroll top</a>
+  <!-- This is the callback-modal -->
+  <div id="callback-modal" data-uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+      <h2 class="uk-modal-title"></h2>
+      <button class="uk-modal-close" type="button"></button>
     </div>
-
   </div>
 
   @@include('_include/page_bottom.html')

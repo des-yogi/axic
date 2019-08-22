@@ -1,0 +1,50 @@
+.index-banner {
+  margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__link {
+    padding-left: 40px;
+    padding-right: 40px;
+
+    @media (min-width: 1280px) {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+  }
+
+  &__inner {
+    margin-top: 20px !important;
+
+    @media (min-width: 768px) {
+      margin-top: 0 !important;
+    }
+  }
+
+  &__img {
+    position: relative;
+
+    &::after {
+
+      @media (min-width: 1280px) {
+        display: block;
+        content: "";
+        position: absolute;
+        z-index: -1;
+        bottom: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 440px;
+        height: 75px;
+        background-image: linear-gradient(to right, #0ca7fe, #0ca7fe 50%, #fe395f 50%);
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 5px;
+      }
+    }
+  }
+}
