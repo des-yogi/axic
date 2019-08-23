@@ -3,4 +3,11 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  .uk-textarea {
+    height: 100px;
+  }
+
+  &__label {
+    cursor: pointer;
+  }
 }

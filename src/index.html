@@ -26,8 +26,12 @@
               </div>
             </div>
             <div class="index-banner__inner">
-              <div class="index-banner__img">
-                <img data-src="img/banner-img.png" width="580" height="348" alt="Альт Текст" uk-img>
+              <div class="index-banner__img uk-position-relative">
+                <picture>
+                  <source srcset="img/banner-img.webp" type="image/webp">
+                  <img src="img/banner-img.png" width="580" height="348" alt="Альт Текст" uk-img>
+                </picture>
+                <span class="uk-position-absolute index-banner__decor-bg"></span>
               </div>
             </div>
           </div>
@@ -47,7 +51,7 @@
 
           <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@l uk-text-center uk-margin-bottom" data-uk-grid data-uk-height-match="target: > div > .uk-card">
             <div>
-              <div class="uk-card uk-card-default uk-card-body services-block__item">
+              <a href="#" class="uk-display-block uk-card uk-card-default uk-card-body services-block__item b-lazy" data-src="img/news-img-2.jpg">
                 <h4>Грузоперевозки по Украине</h4>
                 <ul class="uk-list">
                   <li>Пасажирські перевезення</li>
@@ -56,10 +60,10 @@
                   <li>Оренда спец. техніки</li>
                   <li>Пасажирські перевезення</li>
                 </ul>
-              </div>
+              </a>
             </div>
             <div>
-              <div class="uk-card uk-card-default uk-card-body services-block__item">
+              <a href="#" class="uk-display-block uk-card uk-card-default uk-card-body services-block__item b-lazy" data-src="img/news-img-2.jpg">
                 <h4>Организация переездов</h4>
                 <ul class="uk-list">
                   <li>Пасажирські перевезення</li>
@@ -70,10 +74,10 @@
                   <li>Пасажирські перевезення</li>
                   <li>Пасажирські перевезення</li>
                 </ul>
-              </div>
+              </a>
             </div>
             <div>
-              <div class="uk-card uk-card-default uk-card-body services-block__item">
+              <a href="#" class="uk-display-block uk-card uk-card-default uk-card-body services-block__item b-lazy" data-src="img/news-img-2.jpg">
                 <h4>Управление транспортными рисками на предприятии</h4>
                 <ul class="uk-list">
                   <li>Пасажирські перевезення</li>
@@ -82,10 +86,10 @@
                   <li>Оренда спец. техніки</li>
                   <li>Пасажирські перевезення</li>
                 </ul>
-              </div>
+              </a>
             </div>
             <div>
-              <div class="uk-card uk-card-default uk-card-body services-block__item">
+              <a href="#" class="uk-display-block uk-card uk-card-default uk-card-body services-block__item b-lazy" data-src="img/news-img-2.jpg">
                 <h4>Управление автопарком предприятия, флит менеджмент</h4>
                 <ul class="uk-list">
                   <li>Пасажирські перевезення</li>
@@ -95,7 +99,7 @@
                   <li>Пасажирські перевезення</li>
                   <li>Пасажирські перевезення</li>
                 </ul>
-              </div>
+              </a>
             </div>
           </div>
 
@@ -412,27 +416,31 @@
               <div>
                 <div class="uk-margin">
                   <input class="uk-input" type="text" value="" placeholder="Имя">
+                  <span class="error"><!-- Автоматизовані звіти та нарахування витрат у реальному часі --></span>
                 </div>
                 <div class="uk-margin">
                   <input class="uk-input" type="tel" value="" placeholder="Телефон">
+                  <span class="error"></span>
                 </div>
                 <div class="uk-margin">
                   <input class="uk-input" type="email" value="" placeholder="Email">
+                  <span class="error"></span>
                 </div>
               </div>
             </div>
             <div>
               <div>
                 <div class="uk-margin">
-                  <textarea class="uk-textarea" rows="4" placeholder="Текст"></textarea>
+                  <textarea class="uk-textarea" placeholder="Текст"></textarea>
+                  <span class="error"></span>
                 </div>
                 <div class="uk-margin">
-                  <button class="uk-button uk-button-primary uk-width-expand" type="submit">Зв'язатись з нами</button>
+                  <button class="uk-button uk-button-primary uk-width-expand contacts-form__submit" type="submit">Зв'язатись з нами</button>
                 </div>
                 <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
-                  <label class="">
-                    <input class="uk-checkbox" type="checkbox" checked>
-                    <span class="uk-padding-small uk-padding-remove-vertical">Я даю згоду на обробку персональних даних</span>
+                  <label class="contacts-form__label">
+                    <input id="agreement" class="uk-checkbox" type="checkbox" checked>
+                    <span class="uk-padding-small uk-padding-remove-vertical">Даю згоду на обробку персональних даних</span>
                   </label>
                 </div>
               </div>
@@ -442,6 +450,8 @@
       </section>
 
     </main>
+
+    @@include('blocks/page-footer/page-footer.html')
 
     <!-- This is the off-canvas -->
     <div id="offcanvas" uk-offcanvas="flip: true; overlay: true">
