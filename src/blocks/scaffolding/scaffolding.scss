@@ -12,6 +12,12 @@
     background-repeat: no-repeat;
     background-size: 160px 3px, 35px 3px;
     background-position: left center, right center;
+
+    &--footer {
+      background-image:
+        svg-load('../img/left-decor-line.svg', fill=#fe395f),
+        svg-load('../img/right-decor-line.svg', fill=#fe395f);
+    }
   }
 
   .visually-hidden {
@@ -93,5 +99,14 @@
         }
       }
     }
+  }
+
+  .error:not(:empty) {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 3px;
+    font-size: 12px;
+    line-height: 1.2;
+    color: #fe395f;
   }
 }

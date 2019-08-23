@@ -25,26 +25,21 @@
     }
   }
 
-  &__img {
-    position: relative;
+  &__decor-bg {
+    display: none;
 
-    &::after {
-
-      @media (min-width: 1280px) {
-        display: block;
-        content: "";
-        position: absolute;
-        z-index: -1;
-        bottom: 80px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 440px;
-        height: 75px;
-        background-image: linear-gradient(to right, #0ca7fe, #0ca7fe 50%, #fe395f 50%);
-        background-repeat: no-repeat;
-        background-position: center;
-        border-radius: 5px;
-      }
+    @media (min-width: 1280px) {
+      display: block;
+      z-index: -1;
+      bottom: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 440px;
+      height: 75px;
+      background-image: linear-gradient(to right, #0ca7fe, #0ca7fe 50%, #fe395f 50%);
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 5px;
     }
   }
 }

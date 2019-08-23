@@ -9,6 +9,7 @@
   }
 
   &__item {
+    position: relative;
     padding-top: 65px;
     padding-left: 20px !important;
     padding-right: 20px !important;
@@ -16,11 +17,24 @@
     color: white;
     border-radius: 5px;
     background-color: #181A28;
-    background-image:
-      svg-load('../img/double-decor-line.svg', fill=#0ca7fe);
     background-repeat: no-repeat;
-    background-size: 190px 26px;
-    background-position: center top 20px;
+    background-size: cover;
+    background-position: center;
+
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image:
+        svg-load('../img/double-decor-line.svg', fill=#0ca7fe);
+      background-repeat: no-repeat;
+      background-size: 190px 26px;
+      background-position: center top 20px;
+    }
 
     @media (min-width: 768px) {
       padding-top: 75px;
@@ -30,6 +44,18 @@
     @media (min-width: 1280px) {
       padding-top: 85px;
       padding-bottom: 20px;
+    }
+
+    &:hover {
+      text-decoration: none;
+
+      h4 {
+        color: #0ca7fe;
+      }
+
+      li {
+        color: white;
+      }
     }
   }
 }

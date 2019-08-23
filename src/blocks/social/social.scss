@@ -1,0 +1,13 @@
+.social {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__link {
+    //transition: all 0.2s ease-in-out;
+
+    &:hover,
+    &:focus {
+      color: #0ca7fe !important;
+    }
+  }
+}

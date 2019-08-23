@@ -21,7 +21,8 @@
     "service-item-block": [],
     "contacts-text-block": [],
     "contacts-map-block": [],
-    "p404-block": []
+    "p404-block": [],
+    "social": []
   },
   "addCssBefore": [
     "../../node_modules/uikit/src/scss/variables.scss",
