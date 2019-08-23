@@ -1,9 +1,20 @@
-// В этом файле должны быть стили для БЭМ-блока second-banner, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .second-banner {
+  @include set-block;
+  height: 292px;
+  margin-bottom: 0 !important;
+  color: white;
+  background-color: $global-color;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   $block-name:                &; // #{$block-name}__element
 
+  h1 {
+    color: inherit;
+
+    @media (min-width: 1280px) {
+      margin-top: 20px;
+    }
+  }
 }

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html class="scaffolding" lang="ru" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Текстовая страница</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  <div class="uk-offcanvas-content">
+
+    @@include('blocks/page-header/page-header.html')
+
+    <main class="main-content">
+
+      <div class="uk-container uk-margin-medium-bottom">
+        <ul class="uk-breadcrumb uk-flex uk-flex-center">
+          <li><a href="#">Item</a></li>
+          <li><a href="#">Item</a></li>
+          <li class="uk-disabled"><a>Active</a></li>
+        </ul>
+      </div>
+
+      <div class="uk-container">
+
+        <div class="uk-flex uk-flex-center text-page">
+          <div class="uk-width-1-1 uk-width-5-6@s uk-width-4-5@m uk-width-3-5@l">
+            <h1 class="uk-margin-remove-top uk-text-uppercase uk-text-left">Q&A: Корпоративна трансформація LeasePlan</h1>
+            <p class="uk-text-meta">22 Лют, 2019</p>
+            <p class="uk-h2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <img data-src="img/content-img.jpg" alt="Картинка" uk-img>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+
+    @@include('blocks/page-footer/page-footer.html')
+
+    <!-- This is the off-canvas -->
+    <div id="offcanvas" uk-offcanvas="flip: true; overlay: true">
+      <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+        <ul class="uk-nav uk-nav-default uk-margin-medium-top">
+          <li class="uk-active">
+            <a href="about.html">Про компанію</a>
+          </li>
+          <li class="">
+            <a href="services.html">Послуги</a>
+          </li>
+          <li class="">
+            <a href="news.html">Новини</a>
+          </li>
+          <li class="">
+            <a href="contacts.html">Контакти</a>
+          </li>
+        </ul>
+        <div class="page-header__btn-wrapper  uk-hidden@s" style="display:flex;flex-direction:column;">
+          <button class="uk-button uk-button-danger uk-margin-medium-top uk-margin-bottom" data-uk-toggle="target: #callback-modal" type="button">Зв'язатись з нами</button>
+          <span class="uk-inline">
+            <button class="uk-button uk-button-default uk-width-1-1" type="button">Мова</button>
+            <!-- <div data-uk-drop="mode: click; offset: 10" style="width: 100%">
+              <ul class="uk-list">
+                <li class="">
+                  <a class="" href="#" title="Русский язык" style="display:block; padding: 0 20px;">Рус</a>
+                </li>
+                <li class="">
+                  <a class="" href="#" title="Еще язык" style="display:block; padding: 0 20px;">Анг</a>
+                </li>
+              </ul>
+            </div> -->
+          </span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- This is the callback-modal -->
+  <div id="callback-modal" data-uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+      <h2 class="uk-modal-title"></h2>
+      <button class="uk-modal-close" type="button"></button>
+    </div>
+  </div>
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

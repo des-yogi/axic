@@ -9,5 +9,13 @@
     &:focus {
       color: #0ca7fe !important;
     }
+
+    &--contacts {
+
+      &:hover,
+      &:focus {
+        color: #fe395f !important;
+      }
+    }
   }
 }
