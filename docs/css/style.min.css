@@ -8238,6 +8238,8 @@ iframe.uk-cover {
   margin: -1px;
   padding: 0;
   border: 0; }
+.scaffolding .text-medium {
+  font-weight: 500; }
 .scaffolding ol {
   padding-left: 0;
   list-style: none;
