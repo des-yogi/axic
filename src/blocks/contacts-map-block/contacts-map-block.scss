@@ -1,9 +1,16 @@
-// В этом файле должны быть стили для БЭМ-блока contacts-map-block, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .contacts-map-block {
 
   $block-name:                &; // #{$block-name}__element
 
+  &__map {
+
+    iframe {
+      display: block;
+      min-height: 160px;
+
+      @media (min-width: 768px) {
+        min-height: 320px;
+      }
+    }
+  }
 }

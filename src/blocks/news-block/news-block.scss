@@ -9,4 +9,8 @@
       @include object-fit(cover);
     }
   }
+
+  &--container {
+    padding-top: 0 !important;
+  }
 }

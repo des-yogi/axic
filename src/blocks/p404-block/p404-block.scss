@@ -1,9 +1,13 @@
-// В этом файле должны быть стили для БЭМ-блока p404-block, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .p404-block {
+  //@include set-block;
 
   $block-name:                &; // #{$block-name}__element
 
+  &__title {
+    font-size: calc(3.125rem + ((1vw - 3.2px) * 10.4167));
+
+    @media (min-width: 1280px) {
+      font-size: 150px;
+    }
+  }
 }

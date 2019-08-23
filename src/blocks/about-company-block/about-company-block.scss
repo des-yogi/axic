@@ -1,9 +1,19 @@
-// В этом файле должны быть стили для БЭМ-блока about-company-block, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .about-company-block {
+  @include set-block;
 
   $block-name:                &; // #{$block-name}__element
 
+  &__img-wrapper {
+
+    @media (min-width: 768px) {
+      margin-top: 0 !important;
+    }
+  }
+
+  &__img {
+
+    img {
+      @include object-fit(cover);
+    }
+  }
 }

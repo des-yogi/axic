@@ -8238,6 +8238,8 @@ iframe.uk-cover {
   margin: -1px;
   padding: 0;
   border: 0; }
+.scaffolding .text-medium {
+  font-weight: 500; }
 .scaffolding ol {
   padding-left: 0;
   list-style: none;
@@ -8279,6 +8281,27 @@ iframe.uk-cover {
   font-size: 12px;
   line-height: 1.2;
   color: #fe395f; }
+.scaffolding .text-page {
+  margin-bottom: 40px; }
+.scaffolding .text-page img {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%; }
+.scaffolding .contacts-page {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px; }
+.scaffolding .uk-offcanvas-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh; }
+.scaffolding .uk-offcanvas-content .page-footer {
+    margin-top: auto; }
 .index-banner {
   margin-bottom: 20px; }
 .index-banner__link {
@@ -8349,6 +8372,8 @@ iframe.uk-cover {
        object-fit: cover;
     -o-object-position: center;
        object-position: center; }
+.news-block--container {
+    padding-top: 0 !important; }
 .contacts-form {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -8357,8 +8382,106 @@ iframe.uk-cover {
     height: 100px; }
 .contacts-form__label {
     cursor: pointer; }
+.second-banner {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  height: 292px;
+  margin-bottom: 0 !important;
+  color: white;
+  background-color: #231f20;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+.second-banner h1 {
+    color: inherit; }
+.steps-block {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px; }
+.about-company-block {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px; }
+.about-company-block__img img {
+    -o-object-fit: cover;
+       font-family: "object-fit:cover;object-position:center";
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center; }
+.team-block {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px; }
+.team-block__item, .team-block__link {
+    height: 100%; }
+.team-block__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+.team-block__link:hover, .team-block__link:focus {
+      text-decoration: none; }
+.team-block__link:hover p, .team-block__link:focus p {
+        color: #0ca7fe !important; }
+.team-block__img img {
+    -o-object-fit: cover;
+       font-family: "object-fit:cover;object-position:center";
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center; }
+.team-block__text {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1;
+            flex: 1 1;
+    padding: 30px;
+    background-color: white; }
+.team-block__intro {
+    color: white; }
+.team-block__intro h2 {
+      color: inherit; }
+.service-item-block {
+  margin-bottom: 0 !important; }
+.service-item-block:nth-child(even) {
+    color: white;
+    background-color: #181a28; }
+.service-item-block:nth-child(even) h2, .service-item-block:nth-child(even) h3 {
+      color: inherit; }
+.service-item-block:nth-child(even) .uk-list-bullet > li::before {
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22.5' height='22.5' fill='%23fff'%3E%3Ccircle cx='11.25' cy='11.25' r='3'/%3E%3C/svg%3E"); }
+.service-item-block:nth-child(even) .uk-button-primary {
+      background-color: #fe395f;
+      border-color: #fe395f; }
+.service-item-block:nth-child(even) .uk-button-primary:hover, .service-item-block:nth-child(even) .uk-button-primary:focus {
+        background-color: #fe204a;
+        border-color: #fe204a; }
+.service-item-block:nth-child(even) .uk-button-primary:active {
+        background-color: #fe0636;
+        border-color: #fe0636; }
+.contacts-text-block__list {
+  margin-bottom: 40px; }
+.contacts-text-block__list-inner {
+  margin-bottom: 20px; }
+.contacts-text-block__list-inner:last-child {
+    margin-bottom: 0; }
+.contacts-text-block__value {
+  color: #fe395f; }
+.contacts-text-block__value a {
+    display: inline-block;
+    vertical-align: top;
+    color: inherit; }
+.contacts-map-block__map iframe {
+  display: block;
+  min-height: 160px; }
+.p404-block__title {
+  font-size: calc(3.125rem + ((1vw - 3.2px) * 10.4167)); }
 .social__link:hover, .social__link:focus {
   color: #0ca7fe !important; }
+.social__link--contacts:hover, .social__link--contacts:focus {
+  color: #fe395f !important; }
 @media (min-width: 768px) {
   .uk-container {
     padding-left: 20px;
@@ -8528,6 +8651,14 @@ iframe.uk-cover {
     margin-right: 0 !important; }
   .uk-hidden\@s {
     display: none !important; }
+  .scaffolding .uk-pagination {
+    margin-top: 40px; }
+      .scaffolding .text-page img {
+        max-width: 480px; }
+    .scaffolding .contacts-page {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      margin-bottom: 30px; }
     .index-banner {
       margin-bottom: 40px; }
       .index-banner__inner {
@@ -8553,7 +8684,27 @@ iframe.uk-cover {
     .contacts-form {
       padding-top: 30px;
       padding-bottom: 30px;
-      margin-bottom: 30px; } }
+      margin-bottom: 30px; }
+    .second-banner {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      margin-bottom: 30px; }
+    .steps-block {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      margin-bottom: 30px; }
+    .about-company-block {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      margin-bottom: 30px; }
+    .about-company-block__img-wrapper {
+      margin-top: 0 !important; }
+    .team-block {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      margin-bottom: 30px; }
+    .contacts-map-block__map iframe {
+      min-height: 320px; } }
 @media (min-width: 992px) {
   h1, .uk-h1 {
     font-size: 2.625rem; }
@@ -9088,6 +9239,14 @@ iframe.uk-cover {
               order: 1; }
     .page-footer__contacts-item--tel {
       margin-right: 0 !important; }
+    .scaffolding .text-page {
+      margin-bottom: 80px; }
+      .scaffolding .text-page img {
+        max-width: 705px; }
+    .scaffolding .contacts-page {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      margin-bottom: 40px; }
       .index-banner__link {
         padding-left: 60px;
         padding-right: 60px; }
@@ -9128,7 +9287,44 @@ iframe.uk-cover {
     .contacts-form {
       padding-top: 40px;
       padding-bottom: 40px;
-      margin-bottom: 40px; } }
+      margin-bottom: 40px; }
+    .second-banner {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      margin-bottom: 40px; }
+      .second-banner h1 {
+        margin-top: 20px; }
+    .steps-block {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      margin-bottom: 40px; }
+    .about-company-block {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      margin-bottom: 40px; }
+    .team-block {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      margin-bottom: 40px; }
+    .contacts-text-block__list-inner {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-align: baseline;
+          -ms-flex-align: baseline;
+              align-items: baseline;
+      margin-bottom: 40px; }
+  .contacts-text-block__name {
+    width: calc(33.33% - 20px);
+    margin-right: 40px;
+    margin-bottom: 0 !important; }
+    .contacts-text-block__value {
+      width: calc(66.66% - 20px);
+      margin-bottom: 0; }
+    .p404-block__title {
+      font-size: 150px; } }
 @media (min-width: 1600px) {
   .uk-child-width-1-1\@xl > * {
     width: 100%; }

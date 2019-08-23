@@ -1,9 +1,47 @@
-// В этом файле должны быть стили для БЭМ-блока contacts-text-block, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .contacts-text-block {
 
   $block-name:                &; // #{$block-name}__element
 
+  &__list {
+    margin-bottom: 40px;
+  }
+
+  &__list-inner {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: 1280px) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__name {
+
+    @media (min-width: 1280px) {
+      width: calc(33.33% - 20px);
+      margin-right: 40px;
+      margin-bottom: 0 !important;
+    }
+  }
+
+  &__value {
+    color: #fe395f;
+
+    @media (min-width: 1280px) {
+      width: calc(66.66% - 20px);
+      margin-bottom: 0;
+    }
+
+    a {
+      display: inline-block;
+      vertical-align: top;
+      color: inherit;
+    }
+  }
 }

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html class="scaffolding" lang="ru" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home page</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  <div class="uk-offcanvas-content">
+
+    @@include('blocks/page-header/page-header.html')
+
+    <main class="main-content">
+
+      <div class="index-banner p404-block uk-margin-xlarge-top uk-margin-xlarge-bottom">
+        <div class="uk-container">
+          <div class="uk-child-width-1-1 uk-child-width-1-2@s" data-uk-grid>
+
+            <div>
+              <div class="uk-text-left">
+                <h1 class="uk-text-danger  p404-block__title">404</h1>
+                <span class="uk-h2">Сторінку не знайдено або не існує :(</span>
+                <div class="uk-margin-medium-top">
+                  <a href="index.html" class="uk-button uk-button-default index-banner__link">Повернутися на головну</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="index-banner__inner">
+              <div class="index-banner__img uk-position-relative">
+                <picture>
+                  <source srcset="img/banner-img.webp" type="image/webp">
+                  <img src="img/banner-img.png" width="580" height="348" alt="Альт Текст">
+                </picture>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    @@include('blocks/page-footer/page-footer.html')
+
+    <!-- This is the off-canvas -->
+    <div id="offcanvas" uk-offcanvas="flip: true; overlay: true">
+      <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+        <ul class="uk-nav uk-nav-default uk-margin-medium-top">
+          <li class="uk-active">
+            <a href="about.html">Про компанію</a>
+          </li>
+          <li class="">
+            <a href="services.html">Послуги</a>
+          </li>
+          <li class="">
+            <a href="news.html">Новини</a>
+          </li>
+          <li class="">
+            <a href="contacts.html">Контакти</a>
+          </li>
+        </ul>
+        <div class="page-header__btn-wrapper  uk-hidden@s" style="display:flex;flex-direction:column;">
+          <button class="uk-button uk-button-danger uk-margin-medium-top uk-margin-bottom" data-uk-toggle="target: #callback-modal" type="button">Зв'язатись з нами</button>
+          <span class="uk-inline">
+            <button class="uk-button uk-button-default uk-width-1-1" type="button">Мова</button>
+            <!-- <div data-uk-drop="mode: click; offset: 10" style="width: 100%">
+              <ul class="uk-list">
+                <li class="">
+                  <a class="" href="#" title="Русский язык" style="display:block; padding: 0 20px;">Рус</a>
+                </li>
+                <li class="">
+                  <a class="" href="#" title="Еще язык" style="display:block; padding: 0 20px;">Анг</a>
+                </li>
+              </ul>
+            </div> -->
+          </span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- This is the callback-modal -->
+  <div id="callback-modal" data-uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+      <h2 class="uk-modal-title"></h2>
+      <button class="uk-modal-close" type="button"></button>
+    </div>
+  </div>
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

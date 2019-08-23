@@ -31,6 +31,10 @@
     border: 0;
   }
 
+  .text-medium {
+    font-weight: 500;
+  }
+
   ol {
   padding-left: 0;
   list-style: none;
@@ -101,6 +105,13 @@
     }
   }
 
+  .uk-pagination {
+
+    @media (min-width: 768px) {
+      margin-top: 40px;
+    }
+  }
+
   .error:not(:empty) {
     display: inline-block;
     vertical-align: top;
@@ -108,5 +119,41 @@
     font-size: 12px;
     line-height: 1.2;
     color: #fe395f;
+  }
+
+  .text-page {
+    margin-bottom: 40px;
+
+    @media (min-width: 1280px) {
+      margin-bottom: 80px;
+    }
+
+    img {
+      display: inline-block;
+      vertical-align: top;
+      width: 100%;
+
+      @media (min-width: 768px) {
+        max-width: 480px;
+      }
+
+      @media (min-width: 1280px) {
+        max-width: 705px;
+      }
+    }
+  }
+
+  .contacts-page {
+    @include set-block;
+  }
+
+  .uk-offcanvas-content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    .page-footer {
+      margin-top: auto;
+    }
   }
 }
