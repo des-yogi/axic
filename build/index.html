@@ -60,16 +60,16 @@
                 <button class="uk-button uk-button-danger" data-uk-toggle="target: #callback-modal" type="button">Зв'язатись з нами</button>
                 <span class="uk-inline uk-margin-small-left">
                   <button class="uk-button uk-button-default" type="button">Мова</button>
-                  <!-- <div data-uk-drop="mode: click; offset: 10" style="width: 100%">
+                  <div data-uk-drop="mode: click; offset: 10" style="width: 100%">
                     <ul class="uk-list">
-                      <li class="">
-                        <a class="" href="#" title="Русский язык" style="display:block; padding: 0 20px;">Рус</a>
+                      <li class>
+                        <a class href="#" title="Русский язык" style="display:block; padding: 0 20px;">Рус</a>
                       </li>
-                      <li class="">
-                        <a class="" href="#" title="Еще язык" style="display:block; padding: 0 20px;">Анг</a>
+                      <li class>
+                        <a class href="#" title="Еще язык" style="display:block; padding: 0 20px;">Анг</a>
                       </li>
                     </ul>
-                  </div> -->
+                  </div>
                 </span>
               </div>
               <a class="uk-navbar-toggle uk-icon uk-navbar-toggle-icon uk-padding-remove-right  uk-hidden@l uk-margin-small-left" href="#offcanvas" data-uk-navbar-toggle-icon data-uk-toggle>
@@ -596,16 +596,16 @@
           <button class="uk-button uk-button-danger uk-margin-medium-top uk-margin-bottom" data-uk-toggle="target: #callback-modal" type="button">Зв'язатись з нами</button>
           <span class="uk-inline">
             <button class="uk-button uk-button-default uk-width-1-1" type="button">Мова</button>
-            <!-- <div data-uk-drop="mode: click; offset: 10" style="width: 100%">
+            <div data-uk-drop="mode: click; offset: 10" style="width: 100%">
               <ul class="uk-list">
-                <li class="">
-                  <a class="" href="#" title="Русский язык" style="display:block; padding: 0 20px;">Рус</a>
+                <li class>
+                  <a class href="#" title="Русский язык" style="display:block; padding: 0 20px;">Рус</a>
                 </li>
-                <li class="">
-                  <a class="" href="#" title="Еще язык" style="display:block; padding: 0 20px;">Анг</a>
+                <li class>
+                  <a class href="#" title="Еще язык" style="display:block; padding: 0 20px;">Анг</a>
                 </li>
               </ul>
-            </div> -->
+            </div>
           </span>
         </div>
       </div>
@@ -614,8 +614,29 @@
   <!-- This is the callback-modal -->
   <div id="callback-modal" data-uk-modal>
     <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
-      <h2 class="uk-modal-title"></h2>
-      <button class="uk-modal-close" type="button"></button>
+      <h2 class="uk-modal-title">Зворотній зв’язок</h2>
+      <button class="uk-modal-close-default uk-close-large" type="button" uk-close></button>
+      <div class="callback-modal__form-wrapper">
+        <form class="callback-modal__form" action method>
+          <div class="uk-margin">
+            <input class="uk-input" type="text" name="name" value placeholder="Имя">
+            <span class="error"></span>
+          </div>
+          <div class="uk-margin">
+            <input class="uk-input" type="tel" name="tel" value placeholder="Телефон">
+            <span class="error"></span>
+          </div>
+          <div class="uk-margin">
+            <button class="uk-button uk-button-primary uk-width-expand callback-modal__submit" type="submit">Відправити</button>
+          </div>
+          <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+            <label class="callback-modal__label">
+              <input id="agreement2" class="uk-checkbox" type="checkbox" checked>
+              <span class="uk-padding-small uk-padding-remove-vertical">Даю згоду на обробку персональних даних</span>
+            </label>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
   <script src="js/script.min.js"></script>

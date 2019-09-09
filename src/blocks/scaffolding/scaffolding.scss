@@ -146,14 +146,4 @@
   .contacts-page {
     @include set-block;
   }
-
-  .uk-offcanvas-content {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-
-    .page-footer {
-      margin-top: auto;
-    }
-  }
 }

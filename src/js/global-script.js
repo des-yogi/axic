@@ -44,3 +44,19 @@
     agreementCheckbox.addEventListener('change', agreementHandler);
   }
 })();
+
+(function () {
+  const submitBtn = document.querySelector('.callback-modal__submit');
+  const agreementCheckbox = document.querySelector('#agreement2');
+  const agreementHandler = function (e) {
+    if (!this.checked) {
+      submitBtn.disabled = true;
+    } else {
+      submitBtn.disabled = false;
+    }
+  };
+
+  if (agreementCheckbox) {
+    agreementCheckbox.addEventListener('change', agreementHandler);
+  }
+})();

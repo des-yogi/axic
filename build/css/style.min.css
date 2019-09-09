@@ -4002,7 +4002,7 @@ ul.uk-nav-sub {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0 auto;
-  width: 600px;
+  width: 380px;
   /* 3 */
   max-width: calc(100% - 0.01px) !important;
   /* 4 */
@@ -8291,17 +8291,6 @@ iframe.uk-cover {
   padding-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 20px; }
-.scaffolding .uk-offcanvas-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100vh; }
-.scaffolding .uk-offcanvas-content .page-footer {
-    margin-top: auto; }
 .index-banner {
   margin-bottom: 20px; }
 .index-banner__link {
