@@ -48,20 +48,21 @@
             </a>
           </div>
           <div class="uk-navbar-right">
-            <ul class="uk-navbar-nav  uk-visible@l">
-              <li class="uk-active">
-                <a href="about.html">Про компанію</a>
-              </li>
-              <li class>
-                <a href="services.html">Послуги</a>
-              </li>
-              <li class>
-                <a href="news.html">Новини</a>
-              </li>
-              <li class>
-                <a href="contacts.html">Контакти</a>
-              </li>
-            </ul>
+            [[pdoMenu?
+            &parents=`0`
+            &level=`2`
+            &tplOuter=`@INLINE <ul class="uk-navbar-nav  uk-visible@l">[[+wrapper]]</ul>`
+            &tpl=`@INLINE
+            <li>
+              <a href="[[+link]]" [[+attributes]]>[[+menutitle]]</a>
+              [[+wrapper]]
+            </li>`
+            &tplHere=`@INLINE
+            <li class="uk-active" style="pointer-events:none;">
+              <a [[+attributes]]>[[+menutitle]]</a>
+              [[+wrapper]]
+            </li>`
+            ]]
             <div class="page-header__btn-wrapper  uk-margin-left  uk-visible@s">
               <button class="uk-button uk-button-danger" data-uk-toggle="target: #callback-modal" type="button">
                 [[$langs? &uk=`Зв'язатись з нами` &ru=`Связаться с нами` &en=`Contact us`]]
@@ -70,10 +71,10 @@
                 <button class="uk-button uk-button-default" type="button">[[$langs? &uk=`Мова` &ru=`Язык` &en=`Lang`]]</button>
                 <div data-uk-drop="mode: click; offset: 10" style="width: 100%">
                   <ul class="uk-list uk-background-default">
-                    <li class>
+                    <li>
                       <a class href="#" title="Русский язык" style="display:block; padding: 0 20px;">Рус</a>
                     </li>
-                    <li class>
+                    <li>
                       <a class href="#" title="Еще язык" style="display:block; padding: 0 20px;">Анг</a>
                     </li>
                   </ul>
@@ -148,7 +149,7 @@
                   <a href="partners.html">Наші партнери</a>
                 </li>
                 <li class="page-footer__contacts-item">
-                  <a href="clients.html">Наші клієнти</a>
+                  <a href="clients.html">Наші клієнти</a>     
                 </li>
                 <li class="page-footer__contacts-item">
                   <a href="contacts.html">Контакти</a>
@@ -266,6 +267,7 @@
 </div>
 
 <script src="[[!modxMinify?&group=`scripts`]]" defer></script>
+{block 'addscript'}{/block}
 
 </body>
 </html>

@@ -8256,6 +8256,8 @@ iframe.uk-cover {
     text-align: left;
     line-height: inherit;
     color: inherit; }
+.scaffolding .uk-list-bullet > li {
+  padding-left: calc(1.5em + 10px); }
 .scaffolding .uk-slider-container {
   position: relative; }
 .scaffolding .uk-slider:focus {
@@ -8331,11 +8333,13 @@ iframe.uk-cover {
       background-repeat: no-repeat;
       background-size: 190px 26px;
       background-position: center top 20px; }
-.services-block__item:hover {
+.services-block__item:hover, .services-block__item:focus {
       text-decoration: none; }
-.services-block__item:hover h4 {
+.services-block__item:hover h4,
+      .services-block__item:hover h5, .services-block__item:focus h4,
+      .services-block__item:focus h5 {
         color: #0ca7fe; }
-.services-block__item:hover li {
+.services-block__item:hover li, .services-block__item:focus li {
         color: white; }
 .advantages-block {
   padding-top: 20px;

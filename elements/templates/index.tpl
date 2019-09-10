@@ -2,23 +2,24 @@
 
 {block 'main'}
   <main class="main-content">
+    
     <section class="index-banner">
       <div class="uk-container">
         <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-text-center" data-uk-grid>
           <div>
             <div class="uk-text-left">
-              <h1>Новий стандарт у сфері транспортних послуг</h1>
-              <p>AIXC — це сучасна транспортна служба, яка використовує технологію, щоб зробити
-                транспортні засоби простими, надійними та ефективними для власників автопарку.</p>
-              <a href="about.html" class="uk-button uk-button-default index-banner__link">Дізнатися
-                більше</a>
+              <h1>[[*longtitle:default=`[[*pagetitle]]`]]</h1>
+              <p>[[*introtext]]</p>
+              <a href="[[~[[BabelTranslation:default=`14`? &resourceId=`14` &contextKey=`[[*context_key]]`]]]]" class="uk-button uk-button-default index-banner__link">
+                [[$langs? &uk=`Дізнатися більше` &ru=`Узнать больше` &en=`Read more`]]
+              </a>
             </div>
           </div>
           <div class="index-banner__inner">
             <div class="index-banner__img uk-position-relative">
               <picture>
-                <source srcset="assets/img/banner-img.webp" type="image/webp">
-                <img src="assets/img/banner-img.png" width="580" height="348" alt="Альт Текст">
+                <source data-srcset="assets/img/banner-img.webp" type="image/webp">
+                <img class="b-lazy" data-src="assets/img/banner-img.png" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== width="580" height="348" alt="[[*longtitle]]">
               </picture>
               <span class="uk-position-absolute index-banner__decor-bg"></span>
             </div>
@@ -26,178 +27,96 @@
         </div>
       </div>
     </section>
+
     <section class="services-block">
       <div class="uk-container">
         <div class="uk-child-width-1-2@l uk-flex-center uk-text-center uk-margin-medium-bottom" data-uk-grid>
           <div>
-            <span class="uk-h4 uk-text-uppercase uk-text-muted">Поважайте свій час</span>
-            <h2 class="uk-margin-small-top uk-text-uppercase">Послуги які ми надаємо</h2>
-            <p class="text-medium">Автоматизовані звіти та нарахування витрат у реальному часі означають, що
-              ви можете приймати розумніші рішення з вашим флотом.</p>
+            <span class="uk-h4 uk-text-uppercase uk-text-muted">[[$langs? &uk=`Поважайте свій час` &ru=`Уважайте свое время` &en=`Respect your time`]]</span>
+            <h2 class="uk-margin-small-top uk-text-uppercase">
+              [[pdoField? &id=`[[BabelTranslation:default=`15`? &resourceId=`15` &contextKey=`[[*context_key]]`]]` &field=`longtitle`]]
+            </h2>
+            <p class="text-medium">
+              [[pdoField? &id=`[[BabelTranslation:default=`15`? &resourceId=`15` &contextKey=`[[*context_key]]`]]` &field=`introtext`]]
+            </p>
           </div>
         </div>
-        <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@l uk-text-center uk-margin-bottom"
-             data-uk-grid data-uk-height-match="target: > div > .uk-card">
-          <div>
-            <a href="#"
-               class="uk-display-block uk-card uk-card-default uk-card-body services-block__item b-lazy"
-               data-src="assets/img/relocate-making-bg.jpg">
-              <h4>Грузоперевозки по Украине</h4>
-              <ul class="uk-list">
-                <li>Пасажирські перевезення</li>
-                <li>Оренда спец. техніки</li>
-                <li>Пасажирські перевезення</li>
-                <li>Оренда спец. техніки</li>
-                <li>Пасажирські перевезення</li>
-              </ul>
-            </a>
-          </div>
-          <div>
-            <a href="#"
-               class="uk-display-block uk-card uk-card-default uk-card-body services-block__item b-lazy"
-               data-src="assets/img/relocate-making-bg.jpg">
-              <h4>Организация переездов</h4>
-              <ul class="uk-list">
-                <li>Пасажирські перевезення</li>
-                <li>Оренда спец. техніки</li>
-                <li>Пасажирські перевезення</li>
-                <li>Оренда спец. техніки</li>
-                <li>Пасажирські перевезення</li>
-                <li>Пасажирські перевезення</li>
-                <li>Пасажирські перевезення</li>
-              </ul>
-            </a>
-          </div>
-          <div>
-            <a href="#"
-               class="uk-display-block uk-card uk-card-default uk-card-body services-block__item b-lazy"
-               data-src="assets/img/relocate-making-bg.jpg">
-              <h4>Управление транспортными рисками на предприятии</h4>
-              <ul class="uk-list">
-                <li>Пасажирські перевезення</li>
-                <li>Оренда спец. техніки</li>
-                <li>Пасажирські перевезення</li>
-                <li>Оренда спец. техніки</li>
-                <li>Пасажирські перевезення</li>
-              </ul>
-            </a>
-          </div>
-          <div>
-            <a href="#"
-               class="uk-display-block uk-card uk-card-default uk-card-body services-block__item b-lazy"
-               data-src="assets/img/relocate-making-bg.jpg">
-              <h4>Управление автопарком предприятия, флит менеджмент</h4>
-              <ul class="uk-list">
-                <li>Пасажирські перевезення</li>
-                <li>Оренда спец. техніки</li>
-                <li>Пасажирські перевезення</li>
-                <li>Оренда спец. техніки</li>
-                <li>Пасажирські перевезення</li>
-                <li>Пасажирські перевезення</li>
-              </ul>
-            </a>
-          </div>
+        <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@l uk-text-center uk-margin-bottom" data-uk-grid data-uk-height-match="target: > div > .uk-card">
+          [[pdoResources?
+          &parents=`[[BabelTranslation:default=`15`? &resourceId=`15` &contextKey=`[[*context_key]]`]]`
+          &depth=`0`
+          &tpl=`@FILE chunks/service_item.tpl`
+          &includeTVs=`subservices_list,service_img_bg`
+          &processTVs=`service_img_bg`
+          &limit=`4`
+          ]]
         </div>
         <div class="uk-child-width-1-2@s uk-flex-center uk-text-center uk-margin-remove-top" data-uk-grid>
           <div>
-            <a href="services.html" class="uk-button uk-button-danger uk-width-1-1">Усі послуги</a>
+            <a href="[[~[[BabelTranslation:default=`15`? &resourceId=`15` &contextKey=`[[*context_key]]`]]]]" class="uk-button uk-button-danger uk-width-1-1">
+              [[$langs? &uk=`Усі послуги` &ru=`Все услуги` &en=`All services`]]
+            </a>
           </div>
         </div>
       </div>
     </section>
+    
     <section class="advantages-block">
       <div class="uk-container uk-margin-medium-bottom">
         <div class="uk-child-width-1-2@l uk-flex-center uk-text-center" data-uk-grid>
           <div>
-            <span class="uk-h4 uk-text-uppercase uk-text-muted">Поважайте свій час</span>
-            <h2 class="uk-margin-small-top uk-text-uppercase">Переваги передання послуг фліт менеджменту в
-              аутсорсінг</h2>
-            <p class="text-medium">Автоматизовані звіти та нарахування витрат у реальному часі означають, що
-              ви можете приймати розумніші рішення з вашим флотом.</p>
+            <span class="uk-h4 uk-text-uppercase uk-text-muted">[[$langs? &uk=`Поважайте свій час` &ru=`Уважайте свое время` &en=`Respect your time`]]</span>
+            <h2 class="uk-margin-small-top uk-text-uppercase">
+              [[pdoField? &id=`[[BabelTranslation:default=`26`? &resourceId=`26` &contextKey=`[[*context_key]]`]]` &field=`longtitle`]]
+            </h2>
+            <p class="text-medium">
+              [[pdoField? &id=`[[BabelTranslation:default=`26`? &resourceId=`26` &contextKey=`[[*context_key]]`]]` &field=`introtext`]]
+            </p>
           </div>
         </div>
       </div>
       <div class="uk-section advantages-block__bg">
         <div class="uk-container">
           <div class="uk-child-width-1-1 uk-child-width-1-2@m" data-uk-grid>
+            [[!getImageList?
+            &tvname=`advantages_list`
+            &tpl=`@CODE:
             <div>
-              <h3 class="uk-text-primary">Экономия на трудовых ресурсах</h3>
-              <p>Поскольку определенные бизнес-процессы передаются партнеру, компания избавляется от
-                необходимости содержать собственных сотрудников для их ведения.</p>
+              <h3 class="uk-text-primary">[[+advantages_name]]</h3>
+              <p>[[+advantages_descr]]</p>
             </div>
-            <div>
-              <h3 class="uk-text-primary">Универсальность услуги</h3>
-              <p>Поскольку определенные бизнес-процессы передаются партнеру, компания избавляется от
-                необходимости содержать собственных сотрудников для их ведения.</p>
-            </div>
-            <div>
-              <h3 class="uk-text-primary">Отсутствие расходов на кадровое делопроизводство</h3>
-              <p>Поскольку определенные бизнес-процессы передаются партнеру, компания избавляется от
-                необходимости содержать собственных сотрудников для их ведения.</p>
-            </div>
-            <div>
-              <h3 class="uk-text-primary">Экономия на трудовых ресурсах</h3>
-              <p>Поскольку определенные бизнес-процессы передаются партнеру, компания избавляется от
-                необходимости содержать собственных сотрудников для их ведения.</p>
-            </div>
+            `
+            &docid=`[[BabelTranslation:default=`26`? &resourceId=`26` &contextKey=`[[*context_key]]`]]`
+            &limit=`4`
+            ]]
           </div>
         </div>
       </div>
     </section>
+
     <section class="advantages-block  clients-slider">
       <div class="uk-container uk-margin-medium-bottom">
         <div class="uk-child-width-1-2@l uk-flex-center uk-text-center" data-uk-grid>
           <div>
-            <h2 class="uk-margin-small-top uk-text-uppercase">Вони нам довіряють</h2>
-            <p class="text-medium">Lorem Ipsum є псевдо - латинський текст використовується у веб - дизайні,
-              типографіка, верстка, і друку замість англійської.</p>
+            <h2 class="uk-margin-small-top uk-text-uppercase">
+              [[pdoField? &id=`[[BabelTranslation:default=`20`? &resourceId=`20` &contextKey=`[[*context_key]]`]]` &field=`longtitle`]]
+            </h2>
+            <p class="text-medium">
+              [[pdoField? &id=`[[BabelTranslation:default=`20`? &resourceId=`20` &contextKey=`[[*context_key]]`]]` &field=`introtext`]]
+            </p>
           </div>
         </div>
       </div>
       <div class="uk-container">
-        <div class="uk-position-relative" tabindex="-1" data-uk-slider="center: true">
+        <div class="uk-position-relative" tabindex="-1" data-uk-slider="center: true;">
           <div class="uk-slider-container">
             <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-4@s">
-              <li>
-                <a href="#" class="embed-responsive  advantages-block__img">
-                  <img src="assets/img/slide-img.jpg" alt="Картинка">
-                </a>
-              </li>
-              <li>
-                <a href="#" class="embed-responsive  advantages-block__img">
-                  <img src="assets/img/slide-img.jpg" alt="Картинка">
-                </a>
-              </li>
-              <li>
-                <a href="#" class="embed-responsive  advantages-block__img">
-                  <img src="assets/img/slide-img.jpg" alt="Картинка">
-                </a>
-              </li>
-              <li>
-                <a href="#" class="embed-responsive  advantages-block__img">
-                  <img src="assets/img/slide-img.jpg" alt="Картинка">
-                </a>
-              </li>
-              <li>
-                <a href="#" class="embed-responsive  advantages-block__img">
-                  <img src="assets/img/slide-img.jpg" alt="Картинка">
-                </a>
-              </li>
-              <li>
-                <a href="#" class="embed-responsive  advantages-block__img">
-                  <img src="assets/img/slide-img.jpg" alt="Картинка">
-                </a>
-              </li>
-              <li>
-                <a href="#" class="embed-responsive  advantages-block__img">
-                  <img src="assets/img/slide-img.jpg" alt="Картинка">
-                </a>
-              </li>
-              <li>
-                <a href="#" class="embed-responsive  advantages-block__img">
-                  <img src="assets/img/slide-img.jpg" alt="Картинка">
-                </a>
-              </li>
+              [[!getImageList?
+              &tvname=`clients_list`
+              &tpl=`client_slide_tpl`
+              &docid=`[[BabelTranslation:default=`20`? &resourceId=`20` &contextKey=`[[*context_key]]`]]`
+              &limit=`30`
+              ]]
             </ul>
             <div>
               <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous
@@ -210,60 +129,30 @@
         </div>
       </div>
     </section>
+
     <section class="advantages-block  partners-slider">
       <div class="uk-container uk-margin-medium-bottom">
         <div class="uk-child-width-1-2@l uk-flex-center uk-text-center" data-uk-grid>
           <div>
-            <h2 class="uk-margin-small-top uk-text-uppercase">Наші партнери</h2>
-            <p class="text-medium">Lorem Ipsum є псевдо - латинський текст використовується у веб - дизайні,
-              типографіка, верстка, і друку замість англійської.</p>
+            <h2 class="uk-margin-small-top uk-text-uppercase">
+              [[pdoField? &id=`[[BabelTranslation:default=`19`? &resourceId=`19` &contextKey=`[[*context_key]]`]]` &field=`longtitle`]]
+            </h2>
+            <p class="text-medium">
+              [[pdoField? &id=`[[BabelTranslation:default=`19`? &resourceId=`19` &contextKey=`[[*context_key]]`]]` &field=`introtext`]]
+            </p>
           </div>
         </div>
       </div>
       <div class="uk-container">
-        <div class="uk-position-relative" tabindex="-1" data-uk-slider="center: true">
+        <div class="uk-position-relative" tabindex="-1" data-uk-slider="center: true;">
           <div class="uk-slider-container">
             <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-4@s">
-              <li>
-                <a href="#" class="embed-responsive  advantages-block__img">
-                  <img src="assets/img/slide-img.jpg" alt="Картинка">
-                </a>
-              </li>
-              <li>
-                <a href="#" class="embed-responsive  advantages-block__img">
-                  <img src="assets/img/slide-img.jpg" alt="Картинка">
-                </a>
-              </li>
-              <li>
-                <a href="#" class="embed-responsive  advantages-block__img">
-                  <img src="assets/img/slide-img.jpg" alt="Картинка">
-                </a>
-              </li>
-              <li>
-                <a href="#" class="embed-responsive  advantages-block__img">
-                  <img src="assets/img/slide-img.jpg" alt="Картинка">
-                </a>
-              </li>
-              <li>
-                <a href="#" class="embed-responsive  advantages-block__img">
-                  <img src="assets/img/slide-img.jpg" alt="Картинка">
-                </a>
-              </li>
-              <li>
-                <a href="#" class="embed-responsive  advantages-block__img">
-                  <img src="assets/img/slide-img.jpg" alt="Картинка">
-                </a>
-              </li>
-              <li>
-                <a href="#" class="embed-responsive  advantages-block__img">
-                  <img src="assets/img/slide-img.jpg" alt="Картинка">
-                </a>
-              </li>
-              <li>
-                <a href="#" class="embed-responsive  advantages-block__img">
-                  <img src="assets/img/slide-img.jpg" alt="Картинка">
-                </a>
-              </li>
+              [[!getImageList?
+              &tvname=`clients_list`
+              &tpl=`client_slide_tpl`
+              &docid=`[[BabelTranslation:default=`19`? &resourceId=`19` &contextKey=`[[*context_key]]`]]`
+              &limit=`30`
+              ]]
             </ul>
             <div>
               <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous
@@ -276,182 +165,39 @@
         </div>
       </div>
     </section>
+
     <section class="news-block">
       <div class="uk-container">
         <div class="uk-child-width-1-2@l uk-flex-center uk-text-center uk-margin-medium-bottom" data-uk-grid>
           <div>
-            <h2 class="uk-margin-small-top uk-text-uppercase">Останні новини</h2>
+            <h2 class="uk-margin-small-top uk-text-uppercase">
+              [[pdoField? &id=`[[BabelTranslation:default=`16`? &resourceId=`16` &contextKey=`[[*context_key]]`]]` &field=`longtitle`]]
+            </h2>
           </div>
         </div>
         <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-text-center uk-margin-bottom"
              data-uk-grid data-uk-height-match="target: > div > .uk-card">
-          <div>
-            <div class="uk-card  news-block__item">
-              <a href="text-page.html" class="embed-responsive  embed-responsive--3-2  uk-card-media-top">
-                <picture>
-                  <source data-srcset="assets/img/news-img-1.webp" media="(min-width: 992)"
-                          type="image/webp">
-                  <source data-srcset="assets/img/news-img-1.jpg" media="(min-width: 992)">
-                  <!-- 373x249 -->
-                  <source data-srcset="assets/img/news-img-1.webp" media="(min-width: 768)"
-                          type="image/webp">
-                  <source data-srcset="assets/img/news-img-1.jpg" media="(min-width: 768)">
-                  <!-- 456x304 -->
-                  <source data-srcset="assets/img/news-img-1.webp" type="image/webp">
-                  <img class="b-lazy" data-src="assets/img/news-img-1.jpg"
-                       src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                       alt="Картинка" width="570" height="380">
-                </picture>
-              </a>
-              <div class="uk-text-left">
-                <h4 class="uk-margin-small-top uk-margin-small-bottom">
-                  <a href="text-page.html" class="news-block__link uk-text-emphasis">15 Способів
-                    покращити порядок доставки на наступний модельний рік</a>
-                </h4>
-                <span class="uk-text-meta">22 Лют, 2019</span>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="uk-card  news-block__item">
-              <a href="text-page.html" class="embed-responsive  embed-responsive--3-2  uk-card-media-top">
-                <picture>
-                  <source data-srcset="assets/img/news-img-2.webp" media="(min-width: 992)"
-                          type="image/webp">
-                  <source data-srcset="assets/img/news-img-2.jpg" media="(min-width: 992)">
-                  <!-- 373x249 -->
-                  <source data-srcset="assets/img/news-img-2.webp" media="(min-width: 768)"
-                          type="image/webp">
-                  <source data-srcset="assets/img/news-img-2.jpg" media="(min-width: 768)">
-                  <!-- 456x304 -->
-                  <source data-srcset="assets/img/news-img-2.webp" type="image/webp">
-                  <img class="b-lazy" data-src="assets/img/news-img-2.jpg"
-                       src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                       alt="Картинка" width="570" height="380">
-                </picture>
-              </a>
-              <div class="uk-text-left">
-                <h4 class="uk-margin-small-top uk-margin-small-bottom">
-                  <a href="text-page.html" class="news-block__link uk-text-emphasis">Q&A: Корпоративна
-                    трансформація LeasePlan</a>
-                </h4>
-                <span class="uk-text-meta">22 Лют, 2019</span>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="uk-card  news-block__item">
-              <a href="text-page.html" class="embed-responsive  embed-responsive--3-2  uk-card-media-top">
-                <picture>
-                  <source data-srcset="assets/img/news-img-3.webp" media="(min-width: 992)"
-                          type="image/webp">
-                  <source data-srcset="assets/img/news-img-3.jpg" media="(min-width: 992)">
-                  <!-- 373x249 -->
-                  <source data-srcset="assets/img/news-img-3.webp" media="(min-width: 768)"
-                          type="image/webp">
-                  <source data-srcset="assets/img/news-img-3.jpg" media="(min-width: 768)">
-                  <!-- 456x304 -->
-                  <source data-srcset="assets/img/news-img-3.webp" type="image/webp">
-                  <img class="b-lazy" data-src="assets/img/news-img-3.jpg"
-                       src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                       alt="Картинка" width="570" height="380">
-                </picture>
-              </a>
-              <div class="uk-text-left">
-                <h4 class="uk-margin-small-top uk-margin-small-bottom">
-                  <a href="#" class="news-block__link uk-text-emphasis">Як керувати драйверами Фліт
-                    Менеджмента</a>
-                </h4>
-                <span class="uk-text-meta">22 Лют, 2019</span>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="uk-card  news-block__item">
-              <a href="text-page.html" class="embed-responsive  embed-responsive--3-2  uk-card-media-top">
-                <picture>
-                  <source data-srcset="assets/img/news-img-1.webp" media="(min-width: 992)"
-                          type="image/webp">
-                  <source data-srcset="assets/img/news-img-1.jpg" media="(min-width: 992)">
-                  <!-- 373x249 -->
-                  <source data-srcset="assets/img/news-img-1.webp" media="(min-width: 768)"
-                          type="image/webp">
-                  <source data-srcset="assets/img/news-img-1.jpg" media="(min-width: 768)">
-                  <!-- 456x304 -->
-                  <source data-srcset="assets/img/news-img-1.webp" type="image/webp">
-                  <img class="b-lazy" data-src="assets/img/news-img-1.jpg"
-                       src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                       alt="Картинка" width="570" height="380">
-                </picture>
-              </a>
-              <div class="uk-text-left">
-                <h4 class="uk-margin-small-top uk-margin-small-bottom">
-                  <a href="text-page.html" class="news-block__link uk-text-emphasis">15 Способів
-                    покращити порядок доставки</a>
-                </h4>
-                <span class="uk-text-meta">22 Лют, 2019</span>
-              </div>
-            </div>
-          </div>
+          [[pdoResources?
+          &parents=`[[BabelTranslation:default=`16`? &resourceId=`16` &contextKey=`[[*context_key]]`]]`
+          &depth=`0`
+          &tpl=`@FILE chunks/news_item.tpl`
+          &includeTVs=`article_img`
+          &limit=`3`
+          &sortby=`{ "publishedon":"DESC" }`
+          ]]
         </div>
         <div class="uk-child-width-1-2@s uk-child-width-1-3@l uk-flex-center uk-text-center uk-margin-remove-top"
              data-uk-grid>
           <div>
-            <a href="news.html" class="uk-button uk-button-default uk-width-1-1">Усі новини</a>
+            <a href="[[~[[BabelTranslation:default=`16`? &resourceId=`16` &contextKey=`[[*context_key]]`]]]]" class="uk-button uk-button-default uk-width-1-1">
+              [[$langs? &uk=`Усі новини` &ru=`Все новости` &en=`All news`]]
+            </a>
           </div>
         </div>
       </div>
     </section>
-    <section class="contacts-form">
-      <div class="uk-container uk-margin-medium-bottom">
-        <div class="uk-child-width-1-2@l uk-flex-center uk-text-center" data-uk-grid>
-          <div>
-            <h2 class="uk-margin-small-top uk-text-uppercase">Розпочнемо співпрацю вже сьогодні</h2>
-            <p class="text-medium">Автоматизовані звіти та нарахування витрат у реальному часі означають, що
-              ви можете приймати розумніші рішення з вашим флотом.</p>
-          </div>
-        </div>
-      </div>
-      <div class="uk-container">
-        <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-flex-center"
-             data-uk-grid>
-          <div>
-            <div>
-              <div class="uk-margin">
-                <input class="uk-input" type="text" value placeholder="Имя">
-                <span class="error"></span>
-              </div>
-              <div class="uk-margin">
-                <input class="uk-input" type="tel" value placeholder="Телефон">
-                <span class="error"></span>
-              </div>
-              <div class="uk-margin">
-                <input class="uk-input" type="email" value placeholder="Email">
-                <span class="error"></span>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <div class="uk-margin">
-                <textarea class="uk-textarea" placeholder="Текст"></textarea>
-                <span class="error"></span>
-              </div>
-              <div class="uk-margin">
-                <button class="uk-button uk-button-primary uk-width-expand contacts-form__submit"
-                        type="submit">Зв'язатись з нами
-                </button>
-              </div>
-              <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
-                <label class="contacts-form__label">
-                  <input id="agreement" class="uk-checkbox" type="checkbox" checked>
-                  <span class="uk-padding-small uk-padding-remove-vertical">Даю згоду на обробку персональних даних</span>
-                </label>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+
+    {include "file:chunks/contacts_form.tpl"}
+    
   </main>
 {/block}

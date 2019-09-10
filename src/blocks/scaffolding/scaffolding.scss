@@ -58,6 +58,10 @@
     }
   }
 
+  .uk-list-bullet > li {
+    padding-left: calc(1.5em + 10px);
+  }
+
   .uk-slider-container {
     position: relative;
   }
